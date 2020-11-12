@@ -1,10 +1,10 @@
 package mx.chava100f;
 
-import mx.chava100.hibernate.dao.ConectionDAO;
-import mx.chava100.hibernate.model.Plan;
-import mx.chava100.hibernate.model.grupos.Frutas;
-import mx.chava100.hibernate.model.Medidas;
-import mx.chava100.hibernate.services.GeneradorMenus;
+import mx.chava100f.hibernate.dao.ConectionDAO;
+import mx.chava100f.hibernate.model.Plan;
+import mx.chava100f.hibernate.model.grupos.Frutas;
+import mx.chava100f.hibernate.model.Medidas;
+import mx.chava100f.hibernate.services.GeneradorMenus;
 
 import java.util.List;
 
