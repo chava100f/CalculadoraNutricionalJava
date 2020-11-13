@@ -2,7 +2,6 @@ package mx.chava100f.hibernate.services;
 
 import mx.chava100f.hibernate.dao.ConectionDAO;
 import mx.chava100f.hibernate.model.Plan;
-import mx.chava100f.hibernate.model.grupos.*;
 import mx.chava100f.hibernate.model.plan.Desayuno;
 import mx.chava100f.hibernate.util.GeneralUtils;
 
@@ -11,7 +10,7 @@ import java.util.List;
 
 public class GeneradorMenus implements IGeneradorMenus {
 
-    private Plan plan;
+    /*private Plan plan;
 
     @Override
     public void generaMenu(Plan plan) {
@@ -296,5 +295,5 @@ public class GeneradorMenus implements IGeneradorMenus {
                 }
         }
 
-    }
+    }*/
 }

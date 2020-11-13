@@ -1,7 +1,5 @@
 package mx.chava100f.hibernate.util;
 
-import mx.chava100f.hibernate.model.grupos.*;
-import mx.chava100f.hibernate.model.Medidas;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
@@ -35,7 +33,7 @@ public class HibernateUtil {
 
                 System.out.println("Termina las propiedades");
 
-                config.setProperties(prop);
+                /*config.setProperties(prop);
                 config.addAnnotatedClass(Medidas.class);
                 config.addAnnotatedClass(Frutas.class);
                 config.addAnnotatedClass(Verduras.class);
@@ -45,7 +43,7 @@ public class HibernateUtil {
                 config.addAnnotatedClass(AceitesGrasasSinProteina.class);
                 config.addAnnotatedClass(AlimentosSinEnergia.class);
                 config.addAnnotatedClass(CarneBajaEnGrasa.class);
-                config.addAnnotatedClass(CarneMuyBajaEnGrasa.class);
+                config.addAnnotatedClass(CarneMuyBajaEnGrasa.class);*/
 
                 System.out.println("Termina de cargar las estructuras y propiedades");
 

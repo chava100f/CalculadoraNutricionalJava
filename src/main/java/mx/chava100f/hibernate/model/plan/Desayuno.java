@@ -1,11 +1,10 @@
 package mx.chava100f.hibernate.model.plan;
 
-import mx.chava100f.hibernate.model.grupos.*;
-
 import java.util.List;
 
 public class Desayuno extends EquivalenteGral{
 
+/*
     private List<Frutas> listaFrutas;
     private List<Verduras> listaVerduras;
     private List<Lacteos> listaLacteos;
@@ -118,6 +117,7 @@ public class Desayuno extends EquivalenteGral{
                 ", alimentosSinEnergia=" + alimentosSinEnergia +
                 '}';
     }
+*/
 
 }
 

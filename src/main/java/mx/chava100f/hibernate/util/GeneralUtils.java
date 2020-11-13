@@ -1,6 +1,5 @@
 package mx.chava100f.hibernate.util;
 
-import mx.chava100f.hibernate.model.grupos.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +23,7 @@ public  class GeneralUtils {
 
     public static <T> List<Integer> obtieneListaIds(List<T> list){
 
-        List<Integer> respList  = new ArrayList<>();
+        /*List<Integer> respList  = new ArrayList<>();
         for(T element : list) {
 
             String claseT = element.getClass().toString();
@@ -58,6 +57,7 @@ public  class GeneralUtils {
             }
 
         }
-        return respList;
+        return respList;*/
+        return null;
     }
 }

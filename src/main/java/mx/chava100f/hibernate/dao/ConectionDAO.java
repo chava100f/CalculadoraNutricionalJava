@@ -1,6 +1,5 @@
 package mx.chava100f.hibernate.dao;
 
-import mx.chava100f.hibernate.model.grupos.*;
 import mx.chava100f.hibernate.util.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -10,7 +9,7 @@ import java.util.List;
 
 public class ConectionDAO {
 
-    private static Transaction transaction = null;
+    /*private static Transaction transaction = null;
 
     public static <T> void save(T obj){
 
@@ -176,5 +175,5 @@ public class ConectionDAO {
         }
 
         return respuesta;
-    }
+    }*/
 }
