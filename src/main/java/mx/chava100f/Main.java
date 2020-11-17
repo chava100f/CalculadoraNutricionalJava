@@ -25,7 +25,7 @@ public class Main {
 
         ConexionBD cn = new ConexionBD();
 
-        cn.getAllAlimentos();
+        cn.getAllMedidas();
         cn.close_con();
 
 

@@ -2,6 +2,7 @@ package mx.chava100f.hibernate.conexionBD;
 
 
 import mx.chava100f.hibernate.model.Alimento;
+import mx.chava100f.hibernate.model.Medida;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -34,6 +35,13 @@ public class ConexionBD {
         if(emf != null || emf.isOpen()){
             emf.close();
         }
+    }
+
+    public List<Medida> getAllMedidas(){
+        Medida medida =  em.find(Medida.class, 1);
+        System.out.println("Medida - " + medida);
+
+        return null;
     }
 
     public List<Alimento> getAllAlimentos(){

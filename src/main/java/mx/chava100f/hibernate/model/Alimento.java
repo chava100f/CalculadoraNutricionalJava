@@ -9,7 +9,7 @@ public class Alimento {
 
     @Id
     @Column(name = "id_alimento")
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer idAlimento;
 
     @Column(name = "descripcion")
@@ -20,9 +20,9 @@ public class Alimento {
 
     @ManyToOne(targetEntity = Medida.class, fetch = FetchType.EAGER)
     @JoinColumn(name = "id_medida", referencedColumnName = "id_medida")
-    private Medida medidas;
+    private Medida medida;
 
-    @ManyToOne(targetEntity = Medida.class, fetch = FetchType.EAGER)
+    @ManyToOne(targetEntity = GrupoAlimenticio.class, fetch = FetchType.EAGER)
     @JoinColumn(name = "id_grupo_alimenticio", referencedColumnName = "id_grupo_alimenticio")
     private GrupoAlimenticio grupoAlimenticio;
 
@@ -30,12 +30,12 @@ public class Alimento {
         super();
     }
 
-    public Alimento(Integer idAlimento, String descripcion, Float cantidad, Medida medidas, GrupoAlimenticio grupoAlimenticio) {
+    public Alimento(Integer idAlimento, String descripcion, Float cantidad, Medida medida, GrupoAlimenticio grupoAlimenticio) {
         super();
         this.idAlimento = idAlimento;
         this.descripcion = descripcion;
         this.cantidad = cantidad;
-        this.medidas = medidas;
+        this.medida = medida;
         this.grupoAlimenticio = grupoAlimenticio;
     }
 
@@ -63,12 +63,12 @@ public class Alimento {
         this.cantidad = cantidad;
     }
 
-    public Medida getMedidas() {
-        return medidas;
+    public Medida getMedida() {
+        return medida;
     }
 
-    public void setMedidas(Medida medidas) {
-        this.medidas = medidas;
+    public void setMedida(Medida medida) {
+        this.medida = medida;
     }
 
     public GrupoAlimenticio getGrupoAlimenticio() {
@@ -85,7 +85,7 @@ public class Alimento {
                 "idAlimento=" + idAlimento +
                 ", descripcion='" + descripcion + '\'' +
                 ", cantidad=" + cantidad +
-                ", medidas=" + medidas +
+                ", medida=" + medida +
                 ", grupoAlimenticio=" + grupoAlimenticio +
                 '}';
     }

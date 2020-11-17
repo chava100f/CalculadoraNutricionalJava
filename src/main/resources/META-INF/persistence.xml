@@ -22,9 +22,9 @@
             <property name="hibernate.hbm2ddl.auto" value="update"/>-->
 
             <!-- Configuracion Base de Datos MySQL-->
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://192.168.0.2:3306/db_calculadora_nutricional?serverTimezone=America/Mexico_City"/>
-            <property name="javax.persistence.jdbc.user" value="lapGaming"/>
-            <property name="javax.persistence.jdbc.password" value="lapGaming"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://sql9.freemysqlhosting.net:3306/sql9376974"/>
+            <property name="javax.persistence.jdbc.user" value="sql9376974"/>
+            <property name="javax.persistence.jdbc.password" value="IYwDxGltdY"/>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
             <property name="javax.persistence.jdbc." value=""/>
 

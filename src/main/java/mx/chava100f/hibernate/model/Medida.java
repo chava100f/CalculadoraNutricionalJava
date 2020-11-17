@@ -1,17 +1,13 @@
 package mx.chava100f.hibernate.model;
 
-import java.io.Serializable;
 import javax.persistence.*;
 
 @Entity
 @Table(name = "medida")
-public class Medida implements Serializable{
-
-    private static final long serialVersionUID=1L;
-
+public class Medida{
     @Id
     @Column(name = "id_medida")
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private int idMedida;
 
     @Column(name = "tipo_desc")

@@ -1,17 +1,14 @@
 package mx.chava100f.hibernate.model;
 
 import javax.persistence.*;
-import java.io.Serializable;
 
 @Entity
 @Table(name = "grupo_alimenticio")
-public class GrupoAlimenticio implements Serializable {
-
-    private static final long serialVersionUID=1L;
+public class GrupoAlimenticio {
 
     @Id
     @Column(name = "id_grupo_alimenticio")
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private int idGrupoAlimenticio;
 
     @Column(name = "descripcion")
@@ -25,10 +22,6 @@ public class GrupoAlimenticio implements Serializable {
         super();
         this.idGrupoAlimenticio = idGrupoAlimenticio;
         this.descripcion = descripcion;
-    }
-
-    public static long getSerialVersionUID() {
-        return serialVersionUID;
     }
 
     public int getIdGrupoAlimenticio() {
